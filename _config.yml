@@ -1,0 +1,40 @@
+# Site settings
+title:          SimonVT
+description:    "Minimal Jekyll theme for storytellers"
+url:            "https://simonvt.github.io"
+
+# Author
+author:
+  name:         Simon Vig Therkildsen
+  url:          https://simonvt.github.io
+  email:        simonvt@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+collections:
+  privacy_policies:
+    permalink: /privacy/:title
+    output: true
+
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
